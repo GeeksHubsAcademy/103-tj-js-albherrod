@@ -1,4 +1,5 @@
 function tiers(index) {
+	var print = "";
 	for ( i = 0; i < index; i++) {
         tier = '';
         for (j = 1; j < index - i; j++) {
@@ -7,9 +8,11 @@ function tiers(index) {
         for ( j = 0; j < i + 1; j++) {
           tier = tier + '*';
         }
-        console.log(tier);
+		print = print + tier + "\n";
+        
       }
-	return "";
+	  return print;
 }
+tiers(13);
 
 module.exports = tiers;
